@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WebAssembly TEST</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Enter Number</label>
+                    <input type="number" id="number" class="form-control">
+                    <button onclick="getResult()" class="btn btn-block btn-success mt-3">Check</button>
+                </div>
+                <div>
+                    WebAssembly Result: <span id="wasm_result"></span> <br>
+                    JS Result: <span id="js_result"></span>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</body>
+
+</html>

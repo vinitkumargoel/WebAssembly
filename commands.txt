@@ -1,0 +1,6 @@
+// Run C Program 
+sudo gcc first.c -o first && ./first && rm -rf first
+
+// Compile C to WASM
+emcc first.c -Os -s WASM=1 -s EXPORTED_FUNCTIONS="['_fib']"  -o fibonacci.wasm
+
