@@ -1,4 +1,4 @@
-// #include <stdio.h>
+#include <stdio.h>
 
 long fib(int n)
 {
@@ -17,10 +17,10 @@ long fib(int n)
     return f[n];
 }
 
-// int main()
-// {
-//     int n = 100000;
-//     printf("%lu", fib(n));
-//     getchar();
-//     return 0;
-// }
+int main()
+{
+    int n = 100000;
+    printf("%lu", fib(n));
+    // getchar();
+    return 0;
+}

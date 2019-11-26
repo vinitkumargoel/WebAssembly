@@ -1,12 +1,14 @@
 const imports = { env: {} };
 WebAssembly
-    .instantiateStreaming(fetch('fibonacci_long.wasm'), imports)
+    .instantiateStreaming(fetch('./fibonacci_long.wasm'), imports)
     .then(({ instance }) => {
         if (instance.exports.fib) {
             window.wasm = instance.exports;
             console.log("WASM lodded!!");
         };
     });
+
+
 
 
 function fib(n) {
